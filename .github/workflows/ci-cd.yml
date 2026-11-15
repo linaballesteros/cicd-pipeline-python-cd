@@ -48,7 +48,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock
+        run: "python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock"
 
       - name: Run Black (Formatter)
         run: black app --check
@@ -194,7 +194,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock
+        run: "python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock"
 
       - name: Wait for the new version in Staging
         run: |
@@ -288,7 +288,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock
+        run: "python -m pip install --require-hashes --only-binary :all: -r requirements-dev.lock"
 
       - name: Wait for the new version in Production
         run: |
