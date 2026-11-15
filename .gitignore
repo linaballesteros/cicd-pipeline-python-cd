@@ -1,5 +1,6 @@
 # virtual envs
 .venv/
+venv/
 env/
 
 # python
@@ -25,3 +26,14 @@ flake8-report.txt
 
 # IDE
 .vscode/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Reportes de las pruebas contra los ambientes desplegados
+staging-acceptance-report.html
+smoke-report.html
